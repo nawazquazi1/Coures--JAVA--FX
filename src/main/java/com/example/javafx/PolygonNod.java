@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Polygon;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -11,21 +12,20 @@ import javafx.stage.Stage;
 /**
  * @author im_na
  */
-public class TextNod extends Application {
+public class PolygonNod extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
         Group group = new Group();
         Scene scene = new Scene(group, 600, 600, Color.LIGHTBLUE);
 
-        Text text = new Text();
-        text.setText("WHOOOOA !!");
-        text.setX(50);
-        text.setY(50);
-        text.setFont(Font.font("Verdana", 50));
-        text.setFill(Color.GREEN);
+        Polygon polygon=new Polygon();
+        polygon.getPoints().setAll(
+                200.0,200.0,300.0,300.0,200.0,300.0
+        );
+        polygon.setFill(Color.ORANGE);
 
-        group.getChildren().add(text);
+        group.getChildren().add(polygon);
         stage.setScene(scene);
         stage.show();
 

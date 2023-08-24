@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -11,21 +12,24 @@ import javafx.stage.Stage;
 /**
  * @author im_na
  */
-public class TextNod extends Application {
+public class LineNod extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
         Group group = new Group();
         Scene scene = new Scene(group, 600, 600, Color.LIGHTBLUE);
 
-        Text text = new Text();
-        text.setText("WHOOOOA !!");
-        text.setX(50);
-        text.setY(50);
-        text.setFont(Font.font("Verdana", 50));
-        text.setFill(Color.GREEN);
+        Line line=new Line();
+        line.setStartX(200);
+        line.setStartY(200);
+        line.setEndX(500);
+        line.setEndY(200);
+        line.setStrokeWidth(5);
+        line.setStroke(Color.RED);
+        line.setOpacity(0.4);
+        line.setRotate(45);
 
-        group.getChildren().add(text);
+        group.getChildren().add(line);
         stage.setScene(scene);
         stage.show();
 
