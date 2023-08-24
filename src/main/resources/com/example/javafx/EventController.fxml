@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="253.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.EventController">
+   <children>
+      <FlowPane prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="264.0" layoutY="14.0" mnemonicParsing="false" onAction="#up" text="Up" />
+      <Button layoutX="296.0" layoutY="364.0" mnemonicParsing="false" onAction="#down" text="Down" />
+      <Button layoutX="8.0" layoutY="200.0" mnemonicParsing="false" onAction="#left" text="Left" />
+      <Button layoutX="534.0" layoutY="200.0" mnemonicParsing="false" onAction="#right" text="Right" />
+      <Circle fx:id="circle" fill="#ff0239" layoutX="300.0" layoutY="194.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
