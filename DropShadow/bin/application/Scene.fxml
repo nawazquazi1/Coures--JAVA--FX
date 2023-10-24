@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Polygon fx:id="triangle" fill="DODGERBLUE" layoutX="406.0" layoutY="160.0" stroke="WHITE" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <VBox layoutX="97.0" layoutY="100.0" prefHeight="200.0" prefWidth="156.0">
+         <children>
+            <Slider fx:id="radiusSlider" prefHeight="27.0" prefWidth="156.0" showTickLabels="true" showTickMarks="true" />
+            <Slider fx:id="offsetXSlider" min="-100.0" prefHeight="33.0" prefWidth="156.0" showTickLabels="true" showTickMarks="true" />
+            <Slider fx:id="offsetYSlider" min="-100.0" prefHeight="27.0" prefWidth="156.0" showTickLabels="true" showTickMarks="true" />
+         </children>
+      </VBox>
+      <VBox layoutX="26.0" layoutY="92.0" prefHeight="208.0" prefWidth="63.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Radius" wrappingWidth="62.7392578125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="62.7392578125">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X offset" wrappingWidth="62.7392578125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="62.7392578125">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Y offset" wrappingWidth="62.7392578125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
