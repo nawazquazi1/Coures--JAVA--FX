@@ -1,17 +1,17 @@
-package com.example.javafx;
-
+package application;
+	
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Stage;
 
 
-public class Alarm extends Application {
+public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("Scene.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
 			primaryStage.show();
