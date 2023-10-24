@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1">
+   <Rectangle fx:id="flipper" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" strokeType="INSIDE" width="200.0" />
+</fx:root>
