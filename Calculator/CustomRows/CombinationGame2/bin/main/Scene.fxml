@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #303139;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <children>
+      <Button layoutX="43.0" layoutY="53.0" mnemonicParsing="false" onAction="#getWood" text="Create Wood" />
+      <Button layoutX="43.0" layoutY="101.0" mnemonicParsing="false" onAction="#getIron" text="Create Iron" />
+   </children>
+</AnchorPane>
