@@ -1,4 +1,4 @@
-package application;
+package com.example.javafx;
 
 public class Time {
 	private int hour;
