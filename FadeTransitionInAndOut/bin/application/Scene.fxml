@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="192.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Button layoutX="75.0" layoutY="319.0" mnemonicParsing="false" onAction="#fadeIn" text="Fade In" />
+      <Button layoutX="377.0" layoutY="319.0" mnemonicParsing="false" onAction="#fadeOut" text="Fade Out" />
+   </children>
+</AnchorPane>
