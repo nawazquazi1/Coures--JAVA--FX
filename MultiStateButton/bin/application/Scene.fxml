@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <padding>
+   		<Insert bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   	</padding>
+   	<Label fx:id="welcomeText" />
+   	<Button onAction="#onHelloButtonClick" text="Hello" />
+   	<ModeButton fx:id="modeButton" activeText="On" inactiveText="Off" prefWidth="100" />
+</AnchorPane>
