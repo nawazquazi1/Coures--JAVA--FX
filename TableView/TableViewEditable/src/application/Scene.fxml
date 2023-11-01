@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TableView fx:id="animals" layoutX="309.0" layoutY="77.0" onMouseClicked="#rowClicked" prefHeight="246.0" prefWidth="225.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="typeCol" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+        </columns>
+      </TableView>
+      <VBox layoutX="67.0" layoutY="100.0" prefHeight="200.0" prefWidth="160.0" spacing="5.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+            <TextField fx:id="inputId" disable="true" />
+            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:" />
+            <TextField fx:id="inputType" />
+            <Text layoutX="10.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+            <TextField fx:id="inputName" />
+            <Button mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="160.0" text="Submit" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
