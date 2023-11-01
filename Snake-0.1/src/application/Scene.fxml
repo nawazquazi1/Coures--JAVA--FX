@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#moveSquareKeyPressed" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #EAF4D3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button fx:id="startButton" layoutX="32.0" layoutY="34.0" mnemonicParsing="false" onKeyPressed="#moveSquareKeyPressed" onMouseClicked="#start" text="Restart" />
+      <Button layoutX="517.0" layoutY="34.0" mnemonicParsing="false" onAction="#addBodyPart" text="Add" />
+   </children>
+</AnchorPane>
